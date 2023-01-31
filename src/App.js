@@ -22,7 +22,6 @@ function App() {
       </BrowserRouter>
       
       <ItemListContainer texto='Ezequiel' />
-      
     </div>
   );
 }
