@@ -1,9 +1,9 @@
 import React from 'react'
 
-const CardWidget = () => {
+const CartWidget = () => {
     return (
         <i className="bi bi-cart3"></i>
     )
 }
 
-export default CardWidget
+export default CartWidget
