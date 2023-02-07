@@ -3,10 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
-import Inicio from './components/paginas/Inicio';
-import Articulos from './components/paginas/Articulos';
-import Contacto from './components/paginas/Contacto';
 import ItemListContainer from './components/ItemListConteiner';
+import ItemDetailContainer from './components/ItemDetailContainer';
 
 function App() {
   return (
@@ -14,13 +12,12 @@ function App() {
       <BrowserRouter>
       <Navbar />
         <Routes>
-          <Route path='/' element={<Inicio/>}/>
-          <Route path='/Articulos' element={<Articulos/>}/>
-          <Route path='/Contacto' element={<Contacto/>}/>
+          <Route path='/' element={<ItemListContainer />}/>
+          <Route path='/Pastas' element={<ItemListContainer texto='Ezequiel' />}/>
+          <Route path='/Detalle' element={<ItemDetailContainer />}/>
         </Routes>
       </BrowserRouter>
       
-      <ItemListContainer texto='Ezequiel' />
     </div>
   );
 }

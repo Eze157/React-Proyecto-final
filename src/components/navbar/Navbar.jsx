@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import CartWidget from '../cartwidget';
+import './index.css';
 
 
 const Navbar = () => {
@@ -9,23 +10,22 @@ const Navbar = () => {
         <>
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
-            <a className="navbar-brand" href="#">CasVal</a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
             <li className="nav-item">
-            <Link className="nav-link active" aria-current="page" to='/'>Inicio</Link>
+            <Link className="nav-link active" aria-current="page" to='/'><span className='Color'>Cas</span>Val</Link>
             </li>
             <li className="nav-item">
-            <Link className="nav-link" to='/Articulos'>Articulos</Link>
+            <Link className="nav-link" to='/Pastas'>Pastas</Link>
             </li>
             <li className="nav-item">
-            <Link className="nav-link" to='/Contacto'>Contacto</Link>
+            <Link className="nav-link" to='/Detalle'>Detalle</Link>
             </li>
             <li className="nav-item">
-            <a className="nav-link" href='#'><CartWidget /></a>
+            <a className="nav-link" to='Cart'><CartWidget /></a>
             </li>
             </ul>
             </div>
