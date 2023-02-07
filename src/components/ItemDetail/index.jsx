@@ -1,8 +1,16 @@
 import React from 'react'
+import './itemDetail.css';
 
-const ItemDetail = () => {
+const ItemDetail = ({ data }) => {
 return (
-    <h1>Detalle</h1> 
+    <div className="container">
+        <div className="detail">
+            <img className="detail_img" src={data.image} alt="" />
+            <div className="content">
+                <h1>{data.title}</h1>
+            </div>
+        </div>
+    </div> 
     );
 }
 

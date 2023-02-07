@@ -19,13 +19,13 @@ const Navbar = () => {
             <Link className="nav-link active" aria-current="page" to='/'><span className='Color'>Cas</span>Val</Link>
             </li>
             <li className="nav-item">
-            <Link className="nav-link" to='/Pastas'>Pastas</Link>
+            <Link className="nav-link" to='/categoria/pastas'>Pastas</Link>
             </li>
             <li className="nav-item">
-            <Link className="nav-link" to='/Detalle'>Detalle</Link>
-            </li>
+            <Link className="nav-link" to='/categoria/salsas'>Salsas</Link>
+            </li> 
             <li className="nav-item">
-            <a className="nav-link" to='Cart'><CartWidget /></a>
+            <a className="nav-link" to='cart'><CartWidget /></a>
             </li>
             </ul>
             </div>
