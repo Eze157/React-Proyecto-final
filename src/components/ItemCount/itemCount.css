@@ -1,7 +1,30 @@
 .counter{
+    border-radius: 10%;
+    border: 2px solid black;
     width: fit-content;
-    background-color: aqua;
+    background-color: gray;
     margin: auto;
     padding: 1rem;
     text-align: center;
+}
+
+.decrease{
+    height: 0px;
+    color: blue;
+    font-weight: bold;
+    border: unset;
+}
+
+.increase{
+    height: 0px;
+    color: blue;
+    font-weight: bold;
+    border: unset;
+}
+
+.cart{
+    height: 0px;
+    color: black;
+    font-weight: bold;
+    border: unset;
 }
